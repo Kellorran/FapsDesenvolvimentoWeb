@@ -1,11 +1,11 @@
 body{
-		background-image: url(back3.jpg);
+		background-image: url();
 		background-repeat: no-repeat;
 	}
 #box-div{
 		position: absolute;
 		right: 3%;
-		top: 15%
+		top: 15%;
 }
 i, a, form{
 		font-family: helvetica;
