@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>FAPS</title>
+	
+	<!-- bootstrap css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+			
+</head>
+
+<body>
+	
+	<!-- Barra de Navegação -->
+    <ul class="nav nav-pills container">
+		<li role="presentation" class="active row col-md-1">
+			<button class="form-control glyphicon glyphicon-th-list navbar-form navbar-left navbar-brand"></button>
+		</li>
+		<li role="presentation" class="">
+			<div class="">
+				<span class="col-md-7">
+           			<input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Provas">
+				</span>
+            	<span class="col-md-3">
+                	<button class="btn btn-primary" type="submit">
+           	        	<span class="glyphicon glyphicon-search"></span>
+           	    	</button>
+         		</span>
+        	</div>
+		</li>
+	</ul>
+	<hr />
+	
+	<!-- Campo de Formulário -->
+	<div id="main" class="container">
+		<form name="form" action="#" method="post">
+			<label for="questao">Questão 1</label>
+			<input type="text-area" id="questao" name="questao" class="form-control" required="required">
+		</form> 
+	</div>
+	
+	
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+</body>
+
+</html>
