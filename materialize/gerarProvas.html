@@ -15,6 +15,15 @@
 
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0"></script>
+	
+	<!-- inicializações -->
+	<script type="text/javascript">//<![CDATA[
+		window.onload=function(){
+			$(document).ready(function() {
+				$('select').material_select();
+			});
+		}//]]> 
+	</script>
 			
 </head>
 
@@ -78,7 +87,11 @@
 					<div class="row">
 						<h5 class="page-header">Questões</h5>
 						<div class="input-field col s6">
-							<input id="tipo" name="tipo" type="text" class="validate">
+							<select id="tipo" name="tipo" class="validate">
+								<option value="aberta">aberta</option>
+								<option value="multesc">Multipla Escolha</option>
+								<option value="mista">Mista</option>
+							</select>
 							<label for="tipo">Tipo de prova</label>
 						</div>
 						<div class="input-field col s6">
