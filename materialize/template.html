@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="materialize">
 	
 <head>
 	<meta charset="utf-8">
@@ -15,6 +15,15 @@
 
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0"></script>
+	
+	<!-- Angular -->
+	<script src="js/lib/angular.min.js"></script>
+	<script src="js/lib/angular-route.min.js"></script>
+	<script src="js/lib/angular-sanitize.min.js"></script> 
+	
+	<!-- App -->
+    <script src="js/app.js"></script>
+    <script src="js/router/router.js"></script> 
 			
 </head>
 
@@ -52,6 +61,9 @@
 
 		<div class="col s9">
 		<!-- Conteúdo da área maior  -->
+			<div ng-view>
+            <!-- Conteúdo da rota atual -->
+			</div>
 			
 		</div>
     </div>
